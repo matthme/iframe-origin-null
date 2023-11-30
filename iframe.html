@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>iframe</title>
+  </head>
+  <body>
+    Hello from the iframe<br><br>
+    window.origin: <span id="window-origin"></span><br>
+    window.location.origin: <span id="window-location-origin"></span><br>
+    window.location.href: <span id="window-location-href"></span><br>
+    <script>
+      const windowOrigin = document.getElementById('window-origin');
+      windowOrigin.innerHTML = window.origin;
+      const windowLocationHref = document.getElementById('window-location-href');
+      windowLocationHref.innerHTML = window.location.href;
+    </script>
+  </body>
+</html>
